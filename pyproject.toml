@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "be-sqs-solver"
+version = "0.1.0"
+description = ""
+authors = ["KaaVii <daniloventurini2112@gmail.com>"]
+readme = "README.md"
+packages = [{include = "be_sqs_solver"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+websockets = "^12.0"
+pika = "^1.3.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
