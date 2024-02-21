@@ -5,21 +5,24 @@
 ### Project Structure:
 
 ```.
-├── be.py #Simulates our backend
-├── definitions.json #Configuration for RabbitMQ (Since Azure Simple Queue it's not available locally).
-├── deploy #Dockerfile to automatically run be and solver.
+.
+├── definitions.json # RabbitMQ User Settings
+├── deploy # BE and Solver containers
 │   ├── Dockerfile.be
 │   └── Dockerfile.solver
-├── docker-compose.yml #Main file to be executed as docker-compose up --build
+├── docker-compose.yml
+├── image.png
 ├── poetry.lock
 ├── pyproject.toml
 ├── README.md
-├── solver.py #simulates the solver file
-├── web #simulates the client as a web application
+├── src # Simulates Backend and Solver
+│   ├── be.py
+│   └── solver.py
+├── web # Simulates Front End
 │   ├── index.js
 │   ├── package.json
 │   └── package-lock.json
-└── web.py #simulate the client in terminal
+└── web.py
 ```
 
 ### How to Run: 

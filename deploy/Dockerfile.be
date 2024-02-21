@@ -2,7 +2,7 @@ FROM python:3.9
 
 WORKDIR /app
 
-COPY be.py .
+COPY src/be.py .
 
 RUN pip install pika
 RUN pip install websockets
